@@ -35,6 +35,7 @@ export default function PlayersList() {
           return <li key={player.name}>{player.name}</li>;
         })}
       </ul>
+      <hr/>
       <div>
         <button onClick={fetchPlayers}> Refresh</button>
       </div>
