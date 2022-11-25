@@ -17,7 +17,7 @@ export default function PlayersList() {
   const fetchPlayers = async () => {
     console.log("Fetching Players");
     const players = await getData<Players>(
-      "http://localhost:8080/api/v1/players"
+      "http://rcon.random7.net/api/v1/players"
     );
     SetPlayers(players);
   };
