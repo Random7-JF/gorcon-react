@@ -11,7 +11,7 @@ export default function Message() {
 
   const fetchMsg = async () => {
     console.log("Fetching");
-    const msg = await getData<Message>("http://rcon.random7.net/api/v1/");
+    const msg = await getData<Message>("https://rcon.random7.net/api/v1/");
     SetMessage(msg);
   };
 
